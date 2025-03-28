@@ -58,7 +58,7 @@ function App() {
 
           console.log(reshapedArray);
 
-          const registerRequest = await axios.post("https://modelo-incendio-back.onrender.com/firecheck", { data: reshapedArray });
+          const registerRequest = await axios.post(import.meta.env.VITE_API_URL, { data: reshapedArray });
           console.log(registerRequest)
           console.log(registerRequest.data.hello)
           setPrediction(registerRequest.data.hello)

@@ -73,6 +73,9 @@ function App() {
 
   return (
     <div>
+      <div>
+        Demostración
+      </div>
       <video ref={videoRef} autoPlay playsInline />
       <canvas ref={canvasRef} style={{ display: 'none' }} />
       <div>
